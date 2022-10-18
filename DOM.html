@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <html>
+    <body>
+        <div id="myDiv">Users:</div>
+        <ul>
+            <li>John</li>
+            <li>Pete</li>
+        </ul>
+        <h4 class="myClass">These where all the users</h4>
+        <p class="myClass">Thanks for checking in</p>
+
+
+        <script>
+            let x = document.getElementById("myDiv");
+            alert(x.innerHTML);
+            let y = document.getElementsByTagName("li");
+            for (let i = 0; i < y.length; i++) {
+                alert(y[i].innerHTML);
+            }
+            let z = document.getElementsByClassName("myClass")
+            for (let i = 0; i < y.length; i++) {
+                alert(z[i].innerHTML);           
+            }
+        </script>
+    </body>
+    </html>
